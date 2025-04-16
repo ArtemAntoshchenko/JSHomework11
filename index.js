@@ -14,6 +14,20 @@
 // }
 // console.log(filterRange([2,4,1,8,7],3,9))
 
+// 3)
+// function filterRangeInPlace(arr, x, y) {
+//     for (let i = 0; i < arr.length; i++) {
+//       let val = arr[i];
+//       if (val < x || val > y) {
+//         arr.splice(i, 1);
+//         i--;
+//       }
+//     }
+//   }
+// let arr = [2,5,1,6,7,9]
+// filterRangeInPlace(arr,2,7)
+// console.log(arr)
+
 // 4)
 // let arr=[5,2,1,-10,8]
 // console.log(arr.sort((x,y)=>y-x))
@@ -86,3 +100,17 @@
 //     return uStrings
 // }
 // console.log(unique(strings))
+
+// 13)
+// let users = [
+//     {id: 'john', name: "John Smith", age: 20},
+//     {id: 'ann', name: "Ann Smith", age: 24},
+//     {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
+// function groupById(arr) {
+//     return arr.reduce((obj,val)=>{
+//       obj[val.id]=val;
+//       return obj;
+//     },{})
+//   }
+// console.log(groupById(users))
